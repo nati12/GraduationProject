@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.0.2 (Python 3.11.1 on win32)" generated="20230118 09:16:23.035" rpa="false" schemaversion="3">
+<suite id="s1" name="VC polls" source="C:\Users\Tea\Desktop\AW Academy\Project4\project4\tests\VC_polls.robot">
+<kw name="Open Browser" library="VC_library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230118 09:15:20.664" endtime="20230118 09:15:28.656"/>
+</kw>
+<test id="s1-t1" name="Create Poll And Delete It" line="12">
+<kw name="Open Vibecatch And Log In" library="VC_library" type="SETUP">
+<doc>Opens new page to VibeCatch website and logs in.</doc>
+<msg timestamp="20230118 09:16:03.359" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230118 09:15:28.656" endtime="20230118 09:16:03.364"/>
+</kw>
+<status status="FAIL" starttime="20230118 09:15:28.656" endtime="20230118 09:16:03.365">Setup failed:
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-t2" name="Create Poll With Invalid Name" line="18">
+<kw name="Open Vibecatch And Log In" library="VC_library" type="SETUP">
+<doc>Opens new page to VibeCatch website and logs in.</doc>
+<msg timestamp="20230118 09:16:11.555" level="INFO">Login succesful!</msg>
+<status status="PASS" starttime="20230118 09:15:26.146" endtime="20230118 09:16:11.555"/>
+</kw>
+<kw name="Create Poll With Empty Namefield" library="VC_library">
+<doc>Tries to create new QWL poll with empty namefield.</doc>
+<status status="PASS" starttime="20230118 09:16:11.555" endtime="20230118 09:16:18.756"/>
+</kw>
+<kw name="Creating Poll Should Fail" library="VC_library">
+<doc>Waits for 3 seconds before verifying creating poll has failed.</doc>
+<msg timestamp="20230118 09:16:21.795" level="INFO">New poll was not created</msg>
+<status status="PASS" starttime="20230118 09:16:18.756" endtime="20230118 09:16:21.795"/>
+</kw>
+<status status="PASS" starttime="20230118 09:15:26.126" endtime="20230118 09:16:21.795"/>
+</test>
+<test id="s1-t3" name="Create Poll And Schedule Sending" line="34">
+<kw name="Open Vibecatch And Log In" library="VC_library" type="SETUP">
+<doc>Opens new page to VibeCatch website and logs in.</doc>
+<msg timestamp="20230118 09:15:59.124" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230118 09:15:25.654" endtime="20230118 09:15:59.140"/>
+</kw>
+<doc>Schedules sending created poll to teantestaus@gmail.com.
+Settings: Streamlined, email daily 12PM.</doc>
+<status status="FAIL" starttime="20230118 09:15:25.650" endtime="20230118 09:15:59.141">Setup failed:
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-t4" name="Create Poll and Change Name" line="45">
+<kw name="Open Vibecatch And Log In" library="VC_library" type="SETUP">
+<doc>Opens new page to VibeCatch website and logs in.</doc>
+<msg timestamp="20230118 09:16:00.778" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230118 09:15:25.723" endtime="20230118 09:16:00.778"/>
+</kw>
+<status status="FAIL" starttime="20230118 09:15:25.713" endtime="20230118 09:16:00.778">Setup failed:
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-t5" name="View Results" line="52">
+<kw name="Open Vibecatch And Log In" library="VC_library" type="SETUP">
+<doc>Opens new page to VibeCatch website and logs in.</doc>
+<msg timestamp="20230118 09:16:15.350" level="INFO">Login succesful!</msg>
+<status status="PASS" starttime="20230118 09:15:33.426" endtime="20230118 09:16:15.350"/>
+</kw>
+<kw name="Poll Should Exist" library="VC_library">
+<arg>test1</arg>
+<doc>Verifies poll can be found in poll listing.</doc>
+<msg timestamp="20230118 09:16:17.511" level="INFO">New poll 'test1' was created succesfully</msg>
+<status status="PASS" starttime="20230118 09:16:15.350" endtime="20230118 09:16:17.511"/>
+</kw>
+<kw name="View Results Or Send Reminder" library="VC_library">
+<arg>test1</arg>
+<doc>Checks whether the _Wiew results_ button in poll listing is active, if not, tries
+to send a request to answer immediately. If there is no email added to the poll,
+raises an error with the message "Add an email address!".</doc>
+<msg timestamp="20230118 09:16:17.511" level="INFO">Checking if results were received for the poll test1</msg>
+<msg timestamp="20230118 09:16:17.543" level="INFO">Clicking VIEW RESULTS button.</msg>
+<msg timestamp="20230118 09:16:19.726" level="INFO">Checking the results of the poll test1</msg>
+<status status="PASS" starttime="20230118 09:16:17.511" endtime="20230118 09:16:19.726"/>
+</kw>
+<status status="PASS" starttime="20230118 09:15:33.421" endtime="20230118 09:16:19.726"/>
+</test>
+<test id="s1-t6" name="Create Poll And Use It As A Template" line="56">
+<kw name="Open Vibecatch And Log In" library="VC_library" type="SETUP">
+<doc>Opens new page to VibeCatch website and logs in.</doc>
+<msg timestamp="20230118 09:15:58.508" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230118 09:15:25.914" endtime="20230118 09:15:58.511"/>
+</kw>
+<status status="FAIL" starttime="20230118 09:15:25.909" endtime="20230118 09:15:58.511">Setup failed:
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+navigating to "https://env-5369504.paas.datacenter.fi/", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="VC_library" type="TEARDOWN">
+<status status="PASS" starttime="20230118 09:16:03.367" endtime="20230118 09:16:04.360"/>
+</kw>
+<doc>This test suite tests creating polls in VibeCatch
+website with different settings and viewing results or sending a reminder.</doc>
+<status status="FAIL" starttime="20230118 09:15:19.571" endtime="20230118 09:16:22.614"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="4" skip="0" id="s1" name="VC polls">VC polls</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

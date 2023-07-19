@@ -1,0 +1,7 @@
+flake8
+playwright
+PyPDF2
+robotframework
+robotframework-datadriver[XLS]
+robotframework-pabot
+robotframework-robocop

@@ -1,0 +1,18 @@
+# This file is for configuration of robocop rules
+# This would also work as txt.file
+# Call this like this: robocop --argumentfile config.txt
+
+# exclude missing test case documentation:
+--exclude 0202
+
+# documentation in keywords
+--exclude 0201
+
+# configure capitalize test case name (not all words in a test case):
+#--configure wrong-case-in-keyword-name:convention:first_word_capitalized
+
+# robocop log file
+--output robocop.log
+
+# too few keywords because DataDriver
+--exclude 0528
