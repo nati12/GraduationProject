@@ -1,2 +1,5 @@
-*__pycache__*
-Demo
+.gitignore 
+
+__pycache__
+tests\Demo
+log*

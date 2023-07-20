@@ -1,6 +1,5 @@
 *** Settings ***
-Documentation      This test suite tests valid login functions in the 
-...                website.
+Documentation      This test suite tests valid login functions in the website.
 Library            ../libs/library.py
 Variables          ../libs/variables.py
 Suite Setup        Open Browser        ${BROWSER}

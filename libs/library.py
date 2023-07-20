@@ -19,7 +19,7 @@ class Browser(Enum):
 
 
 @library(scope='SUITE')
-class VC_library:
+class library:
     """ A library providing keywords for testing functionality of *VibeCatch*
     website (vibecatch.com) in testing environment.
     """
