@@ -1,5 +1,6 @@
 # Test Automation Solution for Feedback Poll Creation on a Web Page
 Created by Tea Huovinen, Roosa Lattu and Natalia Timofeeva as a final project in AW Academy test automation program.
+
 In this portfolio, all references to specific companies have been removed, and as a result, the tests will not function as intended.
 
 
@@ -87,4 +88,4 @@ Combined log of the demo, named ***Logs.html***, is created during run of ***run
 
 A LibDoc generated documentation ***VC_library.html*** of the library can be found in "libs" folder.
 The command for creating a libdoc file:
-`libdoc VC_library.py VC_library.html`
+`libdoc library.py library.html`
