@@ -1,5 +1,7 @@
-# VibeCatch Test Automation Solution (Final Project in AW Academy test automation program) 
-Created by Tea Huovinen, Roosa Lattu, Natalia Timofeeva
+# Test Automation Solution for Feedback Poll Creation on a Web Page
+Created by Tea Huovinen, Roosa Lattu and Natalia Timofeeva as a final project in AW Academy test automation program.
+In this portfolio, all references to specific companies have been removed, and as a result, the tests will not function as intended.
+
 
 ## Contents:
 1. General Overview
@@ -9,15 +11,12 @@ Created by Tea Huovinen, Roosa Lattu, Natalia Timofeeva
 5. Links
 
 ## 1. General Overview
-VibeCatch is a platform for collecting and creating feedback polls. It is possible to choose between three different types of polls: 
-- QWL poll
-- Custom poll
-- 180 / 360 reviews poll
+Web page is a platform for collecting and creating feedback polls. It is possible to choose between three different types of polls.
 
-Our team created a test automation solution for VibeCatch using Robot Framework with our own custom library ***VC_library.py***. Library is created by using Playwright with Python.
+Our team created this test automation solution using Robot Framework with our own custom library ***library.py***. Library is created by using Playwright with Python.
 
 ## 2. Files and Functions Overview
-In our project we were testing different functionalities, e.g. creating a poll, deleting a poll, changing settings, sending a reminder, downloading PDF files and creating new questions for custom polls. For all the possible keywords please check the ***VC_library.html*** documentation in the libs folder.
+In our project we were testing different functionalities, e.g. creating a poll, deleting a poll, changing settings, sending a reminder, downloading PDF files and creating new questions for custom polls. For all the possible keywords please check the ***library.html*** documentation in the libs folder.
 
 - All robot test files can be found in the folder "tests". In the same folder you can also find "Demo" folder with log files for all demo files and tests. Also, the - Windows batch file can be found in the same folder.
 - Excel files for DataDriver can be found in the folder "data".
@@ -89,7 +88,3 @@ Combined log of the demo, named ***Logs.html***, is created during run of ***run
 A LibDoc generated documentation ***VC_library.html*** of the library can be found in "libs" folder.
 The command for creating a libdoc file:
 `libdoc VC_library.py VC_library.html`
-
-## 5. Links
-- Link to PowerPoint resentation: 
-https://awacademytraining-my.sharepoint.com/:p:/g/personal/roosa_lattu_brightstraining_com/EdwmYOqIg01FmglP4AketOYBtp_jZZEPlQGPesj_VOZe_w?e=Zqlg0E
