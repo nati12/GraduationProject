@@ -23,8 +23,8 @@ HOME_PAGE = "//img[@alt='']"
 CREATE_POLL = "(//*[contains(@class,'btn add-project')])[1]"
 ADD_NAME = "#addProjectName"
 
-CREATE_QWL = "//button[normalize-space()='Create a poll']"
-SHOW_QWL = "//a[normalize-space()='Show questions']"
+CREATE_A = "//button[normalize-space()='Create a poll']"
+SHOW_A = "//a[normalize-space()='Show questions']"
 CREATE_CUSTOM = "//button[normalize-space()='Create a custom poll']"
 
 # Delete poll
@@ -50,17 +50,17 @@ SEND_NOW = "//a[@class='btn']"
 SEND_OK = "//button[@type='button']"
 
 # Make_streamlined
-QWL_TYPE = "//*[@id='masterContainer']/settings/div/div[2]/div[2]/div[1]/div[2]/select[1]"
+A_TYPE = "//*[@id='masterContainer']/settings/div/div[2]/div[2]/div[1]/div[2]/select[1]"
 GO_AWAY = "//button[normalize-space()='OK']"
 
 # Change name
-SHOW_ALL_QST_BTN = "//a[normalize-space()='Show QWL questions']"
+SHOW_ALL_QST_BTN = "//a[normalize-space()='Show A questions']"
 BASIC_SETTINGS = "//settings-advanced-button[@icon='cog']//div[@class='accordionTitle']"
 NAME_FIELD = "//input[@id='projectName']"
 SAVE_BTN = "//a[@id='save']"
 
 # View results
-QWL_ANALYSIS = "//a[@class='selected']"
+A_ANALYSIS = "//a[@class='selected']"
 NO_EMAIL_NOTIF = "//div[@class='textContainer']"
 NO_EMAIL_NOTIF_OK_BTN = "//button[@type='button']"
 SEND_NOW_BTN = "//a[@class='btn']"
@@ -77,8 +77,8 @@ HELP_BTN = "//a[normalize-space()='Help']"
 FAQ = "//a[normalize-space()='Frequently Asked Questions']"
 FAQ_TITLE = "//h1[normalize-space()='FAQ']"
 TUTORIAL = "//a[normalize-space()='Pulse Poll Tutorial']"
-QWL_PLAYGROUND = "//a[normalize-space()='QWL Playground']"
-QWL_OVERVIEW = "//youtube[1]//a[1]"
+A_PLAYGROUND = "//a[normalize-space()='A Playground']"
+A_OVERVIEW = "//youtube[1]//a[1]"
 HELP_WIN = "//h4[@class='modal-title']"
 
 # Poll question options
@@ -95,5 +95,5 @@ ADD_Q = """//*[@id='masterContainer']/settings/div/div[2]/div[2]/
            settings-resources/div/div/div/a"""
 NEW_Q = "#customQuestionText"
 ADD_NEW_Q = "//button[@type='submit']//i[@class='fa fa-plus-circle']"
-Q_ROW = """//*[@id='masterContainer']/vibe-settings/div/div[2]/div[2]/
+Q_ROW = """//*[@id='masterContainer']/settings/div/div[2]/div[2]/
            settings-resources/div/div/div/div/span/a[3]"""

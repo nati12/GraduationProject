@@ -20,8 +20,8 @@ class Browser(Enum):
 
 @library(scope='SUITE')
 class library:
-    """ A library providing keywords for testing functionality of *VibeCatch*
-    website (vibecatch.com) in testing environment.
+    """ A library providing keywords for testing functionality of the
+    website in testing environment.
     """
 
     def __init__(self):
@@ -50,13 +50,12 @@ class library:
 
     @keyword
     def open_login(self):
-        """Opens new page to VibeCatch website and clicks the login-button."""
+        """Opens new page to the website and clicks the login-button."""
         self.page = self.browser.new_page()
         self.page.set_viewport_size({"width": 1280, "height": 580})
         self.page.goto(variables.LOGIN_PAGE)
         try:
-            time.sleep(3)
-            expect(self.page).to_have_title('Next generation job satisfaction polls | VibeCatch')
+            expect(self.page).to_have_title('')
         except AssertionError as err:
             logger.info(err)
             raise AssertionError('The right page was not opened')
@@ -66,11 +65,11 @@ class library:
 
     @keyword
     def open_page_and_log_in(self):
-        """Opens new page to VibeCatch website and logs in."""
+        """Opens new page to the website and logs in."""
         self.open_login()
         self.submit_credentials(variables.VALID_USERNAME, variables.VALID_PASSWORD)
         try:
-            expect(self.page).to_have_title('VibeCatch', timeout=10000)
+            expect(self.page).to_have_title('', timeout=10000)
             logger.info('Login succesful!')
         except AssertionError as err:
             logger.info(err)
@@ -87,7 +86,7 @@ class library:
     def login_should_succeed(self):
         """Verifies login has succeeded by checking home page is open."""
         try:
-            expect(self.page).to_have_title('VibeCatch')
+            expect(self.page).to_have_title('')
             logger.info('Login was succesful')
         except AssertionError as err:
             logger.info(err)
@@ -124,15 +123,15 @@ class library:
 
     @keyword
     def create_new_poll(self):
-        """Creates new QWL poll.
+        """Creates a new poll.
         Poll is named "Poll_x" with _x_ being random number between 0 and 9999.
         """
         self.poll_name = f'Poll_{_random.randint(0, 10000)}'
         self.initiate_poll()
         self.page.fill(variables.ADD_NAME, self.poll_name)
-        self.page.click(variables.CREATE_QWL)
+        self.page.click(variables.CREATE_A)
         try:
-            expect(self.page.locator(variables.SHOW_QWL)).to_be_enabled()
+            expect(self.page.locator(variables.SHOW_A)).to_be_enabled()
         except AssertionError as err:
             logger.info(err)
             raise AssertionError('New poll was not created succesfully')
@@ -154,14 +153,14 @@ class library:
 
     @keyword
     def create_poll_with_empty_namefield(self):
-        """Tries to create new QWL poll with empty namefield."""
+        """Tries to create new A poll with empty namefield."""
         self.initiate_poll()
         self.page.fill(variables.ADD_NAME, "")
-        self.page.click(variables.CREATE_QWL)
+        self.page.click(variables.CREATE_A)
 
     @keyword
     def create_new_poll_using_template(self):
-        """Creates new QWL poll using another poll as a template.
+        """Creates a new poll using another poll as a template.
         Poll is named "Poll_x" with _x_ being random number between 0 and 9999.
         """
         self.initiate_poll()
@@ -175,7 +174,7 @@ class library:
         """Waits for 3 seconds before verifying creating poll has failed."""
         time.sleep(3)
         try:
-            expect(self.page.locator(variables.CREATE_QWL)).to_be_visible()
+            expect(self.page.locator(variables.CREATE_A)).to_be_visible()
             logger.info('New poll was not created')
         except AssertionError as err:
             logger.info(err)
@@ -221,7 +220,6 @@ class library:
             poll_name = self.poll_name
         set_btn = f"""(//div[@class='row projectRow']//*[text()='{poll_name}']
                        /../../following-sibling::div)[4]//a[3]"""
-        time.sleep(5)
         try:
             expect(self.page.locator(set_btn)).to_be_enabled()
             self.page.locator(set_btn).click()
@@ -344,7 +342,7 @@ class library:
             expect(self.page.locator(view_results_btn)).to_have_class("btn action")
             logger.info('Clicking VIEW RESULTS button.')
             self.page.locator(view_results_btn).click()
-            expect(self.page.locator(variables.QWL_ANALYSIS)).to_be_visible()
+            expect(self.page.locator(variables.A_ANALYSIS)).to_be_visible()
             logger.info(f'Checking the results of the poll {poll_name}')
         except AssertionError as error:
             logger.info(error)
@@ -358,7 +356,7 @@ class library:
         in stead of quality/quantity-dual-axix scale.
         """
         self.go_to_poll_settings()
-        self.page.locator(variables.QWL_TYPE).select_option('streamlined')
+        self.page.locator(variables.A_TYPE).select_option('streamlined')
         expect(self.page.locator(variables.SAVE_CONT)).to_be_enabled()
         self.page.click(variables.SAVE_CONT)
         logger.info("Poll settings: Streamlined")
@@ -406,18 +404,17 @@ class library:
         self.page.click(variables.TEMPLATE)
         logger.info("Poll settings: Template")
         self.page.click(variables.SAVE_BTN)
-        time.sleep(15)
         logger.info("Changes saved")
 
     @keyword
     def poll_should_be_template(self):
-        """Verifies poll type is _QWL template_ in the poll listing view."""
+        """Verifies poll type is _A template_ in the poll listing view."""
         poll_type = f"""(//div[@class='row projectRow']//*[text()='{self.poll_name}']
                         /following-sibling::span[@class='projectTypeLabel'])[1]"""
         self.go_to_home_page()
         try:
             expect(self.page.locator(poll_type)).to_be_visible()
-            expect(self.page.locator(poll_type)).to_contain_text('QWL template')
+            expect(self.page.locator(poll_type)).to_contain_text('A template')
             logger.info(f'{self.poll_name} is now a template')
         except AssertionError as err:
             logger.info(err)
@@ -428,7 +425,6 @@ class library:
         """Adds a new feedback question to custom poll."""
         if self.page.locator(variables.CREATE_POLL).is_visible():
             self.go_to_poll_settings()
-        time.sleep(5)
         self.page.click(variables.ADD_Q)
         logger.info('Starting to add new question to Custom poll')
         try:
@@ -465,20 +461,20 @@ class library:
         """Verifies Poll Tutorial Video has been opened in YouTube in new tab."""
         self.newpage = self.popup_info.value
         try:
-            expect(self.newpage).to_have_title("VibeCatch Pulse Poll Tutorial - YouTube")
+            expect(self.newpage).to_have_title("YouTube")
         except AssertionError as err:
             logger.info(err)
             raise AssertionError("Failed to open tutorial video on YouTube.")
 
     @keyword
-    def qwl_playground_should_be_open(self):
-        """Verifies QWL Playground page has been opened in new tab."""
+    def A_playground_should_be_open(self):
+        """Verifies A Playground page has been opened in new tab."""
         self.newpage = self.popup_info.value
         try:
-            expect(self.newpage.locator(variables.QWL_OVERVIEW)).to_be_visible()
+            expect(self.newpage.locator(variables.A_OVERVIEW)).to_be_visible()
         except AssertionError as err:
             logger.info(err)
-            raise AssertionError("Failed to open QWL Playground.")
+            raise AssertionError("Failed to open A Playground.")
 
     @keyword
     def choose_pdf_document(self, name: str):
@@ -487,11 +483,6 @@ class library:
         """
         if self.page.locator(variables.HELP_WIN).is_visible() is False:
             self.page.click(variables.HELP_BTN)
-        # poista seuraavat demon jälkeen:
-        with self.page.expect_popup() as self.popup_info:
-            self.page.click(f"//a[normalize-space()='{name}']")
-            self.newpage = self.popup_info.value
-        # poista tähän asti demon jälkeen
         with self.page.expect_download() as self.pdf_download:
             self.page.click(f"//a[normalize-space()='{name}']", modifiers=["Alt",])
 
@@ -532,7 +523,6 @@ class library:
             logger.info(err)
             raise AssertionError("Can't locate _save & continue_ button on the page.")
         self.page.click(variables.SAVE_CONT)
-        time.sleep(5)
 
     @keyword
     def check_poll_form(self, number: int):
@@ -587,7 +577,6 @@ class library:
         are left in the page. This will delete every poll except for the one named "test1",
         which is used again in another test case.
         """
-        time.sleep(6)
         project_row = "//div[@class='row projectRow'][1][1]"
         if self.page.locator("//a[@class='sortItem selected']").is_visible():
             expect(self.page.locator(project_row)).not_to_contain_text('test1')
