@@ -1,6 +1,6 @@
 # Test Automation Solution for Feedback Poll Creation on a Web Page
-Created by Tea Huovinen, Roosa Lattu and Natalia Timofeeva as a final project in AW Academy test automation program. Project was completed in two week period
-using previous projects as a foundation.
+Created by Tea Huovinen, Roosa Lattu (@roosa-l) and Natalia Timofeeva (@nati12) as a final project in AW Academy test automation program. 
+Project was completed in two week period using previous projects as a foundation.
 
 In this portfolio, all references to specific companies have been removed, and as a result, the tests will not function as intended.
 
@@ -10,7 +10,6 @@ In this portfolio, all references to specific companies have been removed, and a
 2. Files and Functions Overview
 3. Demo
 4. Logs
-5. Links
 
 ## 1. General Overview
 Web page is a platform for collecting and creating feedback polls. It is possible to choose between three different types of polls.
