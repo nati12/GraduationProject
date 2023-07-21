@@ -1,5 +1,6 @@
 # Test Automation Solution for Feedback Poll Creation on a Web Page
-Created by Tea Huovinen, Roosa Lattu and Natalia Timofeeva as a final project in AW Academy test automation program.
+Created by Tea Huovinen, Roosa Lattu and Natalia Timofeeva as a final project in AW Academy test automation program. Project was completed in two week period
+using previous projects as a foundation.
 
 In this portfolio, all references to specific companies have been removed, and as a result, the tests will not function as intended.
 
