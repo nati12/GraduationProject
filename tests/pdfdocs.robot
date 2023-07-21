@@ -1,6 +1,7 @@
 *** Settings ***
-Documentation      This test suite tests access to customer guide PDF documents on theweb page
+Documentation      This test suite tests access to customer guide PDF documents on the
 ...                website. Data for test cases is collected from a separate file using DataDriver.
+...                For this fortfolio the excel file is emptied.
 Library            ../libs/library.py
 Library            DataDriver        file=../data/pdf_docs.xlsx
 Variables          ../libs/variables.py

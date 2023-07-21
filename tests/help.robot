@@ -16,6 +16,6 @@ Open Poll Tutorial
     Choose From Help Options    ${TUTORIAL}
     Poll Tutorial Should Be Open
 
-Open QWL Playground
-    Choose From Help Options    ${QWL_PLAYGROUND}
-    QWL Playground Should Be Open
+Open A Playground
+    Choose From Help Options    ${A_PLAYGROUND}
+    A Playground Should Be Open

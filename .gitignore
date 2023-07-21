@@ -2,3 +2,6 @@
 
 __pycache__
 log*
+log.html
+output.html
+report.html

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230721 09:50:31.026" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests">
+<suite id="s1-s1" name="Custom Poll" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\custom_poll.robot">
+<kw name="Open Browser" library="library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:50:31.318" endtime="20230721 09:50:33.538"/>
+</kw>
+<test id="s1-s1-t1" name="Create custom poll" line="11">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:34.379" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:33.552" endtime="20230721 09:50:34.379"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:33.538" endtime="20230721 09:50:34.379">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:50:34.387" endtime="20230721 09:50:34.896"/>
+</kw>
+<doc>This test suite tests creating custom polls in the web page.</doc>
+<status status="FAIL" starttime="20230721 09:50:31.066" endtime="20230721 09:50:34.896"/>
+</suite>
+<suite id="s1-s2" name="Help" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\help.robot">
+<kw name="Open Browser" library="library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:50:34.908" endtime="20230721 09:50:36.389"/>
+</kw>
+<test id="s1-s2-t1" name="Open Frequently Asked Questions" line="11">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:37.130" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:36.392" endtime="20230721 09:50:37.130"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:36.389" endtime="20230721 09:50:37.130">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s2-t2" name="Open Poll Tutorial" line="15">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:37.728" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:37.138" endtime="20230721 09:50:37.728"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:37.136" endtime="20230721 09:50:37.728">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s2-t3" name="Open A Playground" line="19">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:38.286" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:37.737" endtime="20230721 09:50:38.286"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:37.737" endtime="20230721 09:50:38.296">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:50:38.300" endtime="20230721 09:50:38.996"/>
+</kw>
+<doc>This test suite tests help options on the website.</doc>
+<status status="FAIL" starttime="20230721 09:50:34.897" endtime="20230721 09:50:38.996"/>
+</suite>
+<suite id="s1-s3" name="Invalid Login" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\invalid_login.robot">
+<kw name="Open Browser" library="library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:50:40.521" endtime="20230721 09:50:42.255"/>
+</kw>
+<test id="s1-s3-t1" name="Invalid username and valid password" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:42.975" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:42.260" endtime="20230721 09:50:42.975"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:42.255" endtime="20230721 09:50:42.979">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s3-t2" name="Valid username and invalid password" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:43.686" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:42.995" endtime="20230721 09:50:43.688"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:42.987" endtime="20230721 09:50:43.688">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s3-t3" name="Invalid username and invalid password" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:44.223" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:43.696" endtime="20230721 09:50:44.226"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:43.688" endtime="20230721 09:50:44.226">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s3-t4" name="Empty username and valid password" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:44.776" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:44.236" endtime="20230721 09:50:44.776"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:44.226" endtime="20230721 09:50:44.776">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s3-t5" name="Empty username and invalid password" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:45.385" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:44.792" endtime="20230721 09:50:45.385"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:44.787" endtime="20230721 09:50:45.385">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s3-t6" name="Valid username and empty password" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:45.945" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:45.404" endtime="20230721 09:50:45.955"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:45.396" endtime="20230721 09:50:45.955">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s3-t7" name="Both empty" line="14">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:50:46.517" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:45.965" endtime="20230721 09:50:46.525"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:45.962" endtime="20230721 09:50:46.526">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:50:46.528" endtime="20230721 09:50:47.816"/>
+</kw>
+<doc>This test suite tests invalid logins using DataDriver in the web page
+website.</doc>
+<status status="FAIL" starttime="20230721 09:50:39.001" endtime="20230721 09:50:47.816"/>
+</suite>
+<suite id="s1-s4" name="Pdfdocs" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\pdfdocs.robot">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Open Browser</arg>
+<arg>${BROWSER}</arg>
+<arg>AND</arg>
+<arg>Open Page And Log In</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Open Browser" library="library">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:50:47.981" endtime="20230721 09:50:49.416"/>
+</kw>
+<kw name="Open Page And Log In" library="library">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:50.155" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:49.418" endtime="20230721 09:50:50.160"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:47.981" endtime="20230721 09:50:50.162"/>
+</kw>
+<test id="s1-s4-t1" name="Hierarchy" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.162" endtime="20230721 09:50:50.175">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t2" name="Pulse Poll Checklist" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.179" endtime="20230721 09:50:50.179">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t3" name="Conversations" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.196" endtime="20230721 09:50:50.206">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t4" name="Employee Guide" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.215" endtime="20230721 09:50:50.225">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t5" name="Manager Guide" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.233" endtime="20230721 09:50:50.241">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t6" name="Pulse Poll Guide" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.241" endtime="20230721 09:50:50.245">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t7" name="QWL Poll Guide" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.255" endtime="20230721 09:50:50.258">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t8" name="Translation Checklist" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.274" endtime="20230721 09:50:50.281">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t9" name="Theoretical Background" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.285" endtime="20230721 09:50:50.296">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t10" name="QWL Whitepaper" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.306" endtime="20230721 09:50:50.307">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t11" name="Walkthrough" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.315" endtime="20230721 09:50:50.326">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t12" name="Technical Integration Guide" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.340" endtime="20230721 09:50:50.356">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s4-t13" name="Categories" line="15">
+<status status="FAIL" starttime="20230721 09:50:50.366" endtime="20230721 09:50:50.376">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:50:50.389" endtime="20230721 09:50:50.935"/>
+</kw>
+<doc>This test suite tests access to customer guide PDF documents on theweb page
+website. Data for test cases is collected from a separate file using DataDriver.</doc>
+<status status="FAIL" starttime="20230721 09:50:47.826" endtime="20230721 09:50:50.935">Suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</suite>
+<suite id="s1-s5" name="Polls" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\polls.robot">
+<kw name="Open Browser" library="library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:50:50.948" endtime="20230721 09:50:52.369"/>
+</kw>
+<test id="s1-s5-t1" name="Create Poll And Delete It" line="12">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:53.013" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:52.377" endtime="20230721 09:50:53.014"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:52.369" endtime="20230721 09:50:53.015">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s5-t2" name="Create Poll With Invalid Name" line="18">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:53.671" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:53.025" endtime="20230721 09:50:53.671"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:53.023" endtime="20230721 09:50:53.674">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s5-t3" name="Create Poll And Schedule Sending" line="22">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:54.207" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:53.679" endtime="20230721 09:50:54.217"/>
+</kw>
+<doc>Schedules sending created poll to teantestaus@gmail.com.
+Settings: Streamlined, email daily 12PM.</doc>
+<status status="FAIL" starttime="20230721 09:50:53.679" endtime="20230721 09:50:54.217">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s5-t4" name="Create Poll and Change Name" line="33">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:54.755" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:54.220" endtime="20230721 09:50:54.755"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:54.220" endtime="20230721 09:50:54.755">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s5-t5" name="Create Poll And Use It As A Template" line="40">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:55.348" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:54.765" endtime="20230721 09:50:55.355"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:54.764" endtime="20230721 09:50:55.355">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:50:55.359" endtime="20230721 09:50:57.385"/>
+</kw>
+<doc>This test suite tests creating polls in the
+website with different settings and viewing results or sending a reminder.</doc>
+<status status="FAIL" starttime="20230721 09:50:50.943" endtime="20230721 09:50:57.385"/>
+</suite>
+<suite id="s1-s6" name="Polls2" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\polls2.robot">
+<kw name="Open Browser" library="library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:50:57.415" endtime="20230721 09:50:58.855"/>
+</kw>
+<test id="s1-s6-t1" name="Create Poll and Change Name" line="12">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:50:59.581" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:58.859" endtime="20230721 09:50:59.583"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:50:58.855" endtime="20230721 09:50:59.584">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s6-t2" name="Create Poll In Finnish And Send" line="19">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:51:00.203" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:50:59.590" endtime="20230721 09:51:00.203"/>
+</kw>
+<doc>Sends created poll to teantestaus@gmail.com.
+Settings: translated to Finnish</doc>
+<status status="FAIL" starttime="20230721 09:50:59.590" endtime="20230721 09:51:00.205">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s6-t3" name="View Results" line="32">
+<kw name="Open Page And Log In" library="library" type="SETUP">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:51:00.688" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:51:00.209" endtime="20230721 09:51:00.691"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:51:00.205" endtime="20230721 09:51:00.692">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:51:00.695" endtime="20230721 09:51:01.295"/>
+</kw>
+<doc>This test suite tests creating polls in the web page,
+changing name and viewing results or sending a reminder.</doc>
+<status status="FAIL" starttime="20230721 09:50:57.398" endtime="20230721 09:51:01.295"/>
+</suite>
+<suite id="s1-s7" name="Questions" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\questions.robot">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Open Browser</arg>
+<arg>${BROWSER}</arg>
+<arg>AND</arg>
+<arg>Open Page And Log In</arg>
+<arg>AND</arg>
+<arg>Create New Poll</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Open Browser" library="library">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:51:01.321" endtime="20230721 09:51:02.780"/>
+</kw>
+<kw name="Open Page And Log In" library="library">
+<doc>Opens new page to the website and logs in.</doc>
+<msg timestamp="20230721 09:51:03.549" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:51:02.783" endtime="20230721 09:51:03.549"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:51:01.321" endtime="20230721 09:51:03.549"/>
+</kw>
+<test id="s1-s7-t1" name="Three Questions" line="18">
+<status status="FAIL" starttime="20230721 09:51:03.549" endtime="20230721 09:51:03.555">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s7-t2" name="Six Questions" line="19">
+<status status="FAIL" starttime="20230721 09:51:03.562" endtime="20230721 09:51:03.562">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s7-t3" name="Nine Questions" line="20">
+<status status="FAIL" starttime="20230721 09:51:03.568" endtime="20230721 09:51:03.568">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s7-t4" name="Twelve Questions" line="21">
+<status status="FAIL" starttime="20230721 09:51:03.575" endtime="20230721 09:51:03.577">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s7-t5" name="All Questions" line="22">
+<status status="FAIL" starttime="20230721 09:51:03.577" endtime="20230721 09:51:03.577">Parent suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Run Keywords" library="BuiltIn" type="TEARDOWN">
+<arg>Go To Home Page</arg>
+<arg>Delete Poll</arg>
+<arg>Close Browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Go To Home Page" library="library">
+<doc>Goes to home page by clicking the home page button.</doc>
+<msg timestamp="20230721 09:51:33.627" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//img[@alt='']")
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:51:03.584" endtime="20230721 09:51:33.627"/>
+</kw>
+<kw name="Delete Poll" library="library">
+<doc>Deletes the poll used in a test case. This method is used at the end of a
+test case, where new poll is created and not needed in future test cases.</doc>
+<msg timestamp="20230721 09:51:38.716" level="INFO">Locator expected to be enabled
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_enabled with timeout 5000ms
+waiting for locator("xpath=//settings-advanced-button[@class='removal-section']//div[@class='accordionTitle']")</msg>
+<msg timestamp="20230721 09:51:38.716" level="FAIL">Can't delete poll because browser is on a wrong page.</msg>
+<status status="FAIL" starttime="20230721 09:51:33.627" endtime="20230721 09:51:38.716"/>
+</kw>
+<kw name="Close Browser" library="library">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:51:38.716" endtime="20230721 09:51:39.195"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:51:03.584" endtime="20230721 09:51:39.195">Several failures occurred:
+
+1) TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//img[@alt='']")
+============================================================
+
+2) Can't delete poll because browser is on a wrong page.</status>
+</kw>
+<doc>This test suite contains tests for adjusting
+number of questions in the created poll.</doc>
+<status status="FAIL" starttime="20230721 09:51:01.295" endtime="20230721 09:51:39.195">Suite setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================
+
+Also suite teardown failed:
+Several failures occurred:
+
+1) TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//img[@alt='']")
+============================================================
+
+2) Can't delete poll because browser is on a wrong page.</status>
+</suite>
+<suite id="s1-s8" name="Valid Login" source="C:\Users\﻿TeaHuovinen\Desktop\portfolio\tests\valid_login.robot">
+<kw name="Open Browser" library="library" type="SETUP">
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser. By default browser is _Chromium_.
+Test suite can also be set to use _Firefox_ as a browser.</doc>
+<status status="PASS" starttime="20230721 09:51:39.218" endtime="20230721 09:51:40.695"/>
+</kw>
+<test id="s1-s8-t1" name="Valid login And Log Out" line="11">
+<kw name="Open Login" library="library" type="SETUP">
+<doc>Opens new page to the website and clicks the login-button.</doc>
+<msg timestamp="20230721 09:51:41.359" level="FAIL">Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230721 09:51:40.697" endtime="20230721 09:51:41.365"/>
+</kw>
+<status status="FAIL" starttime="20230721 09:51:40.695" endtime="20230721 09:51:41.365">Setup failed:
+Protocol error (Page.navigate): Cannot navigate to invalid URL
+=========================== logs ===========================
+navigating to "https://", waiting until "load"
+============================================================</status>
+</test>
+<kw name="Close Browser" library="library" type="TEARDOWN">
+<doc>Closes browser and all open pages.</doc>
+<status status="PASS" starttime="20230721 09:51:41.369" endtime="20230721 09:51:41.884"/>
+</kw>
+<doc>This test suite tests valid login functions in the website.</doc>
+<status status="FAIL" starttime="20230721 09:51:39.204" endtime="20230721 09:51:41.884"/>
+</suite>
+<status status="FAIL" starttime="20230721 09:50:31.032" endtime="20230721 09:51:41.894"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="38" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="38" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Custom Poll">Tests.Custom Poll</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s2" name="Help">Tests.Help</stat>
+<stat pass="0" fail="7" skip="0" id="s1-s3" name="Invalid Login">Tests.Invalid Login</stat>
+<stat pass="0" fail="13" skip="0" id="s1-s4" name="Pdfdocs">Tests.Pdfdocs</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s5" name="Polls">Tests.Polls</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s6" name="Polls2">Tests.Polls2</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s7" name="Questions">Tests.Questions</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s8" name="Valid Login">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
