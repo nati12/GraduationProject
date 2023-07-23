@@ -84,8 +84,8 @@ We chose 18 test cases from our test automation solution to be included in the d
 In our demo we are executing ***run.bat*** file.
 
 ## 4. Logs
-Combined log of the demo, named ***Logs.html***, is created during run of ***run.bat*** file. You can find it in the "tests" folder.
+Combined log of the demo, named ***Logs.html***, is created during run of ***run.bat*** file. It will be created in the "tests" folder.
 
-A LibDoc generated documentation ***VC_library.html*** of the library can be found in "libs" folder.
+A LibDoc generated documentation ***library.html*** of the library can be found in "libs" folder.
 The command for creating a libdoc file:
 `libdoc library.py library.html`
